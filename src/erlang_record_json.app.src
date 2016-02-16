@@ -1,0 +1,8 @@
+{application, erlang_record_json,
+ [
+  {vsn, git},
+  {description, "Utility to convert erlang record to json and back."},
+  {applications, [kernel, stdlib]},
+  {registered, []},
+  {env, []}
+ ]}.

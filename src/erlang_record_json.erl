@@ -11,10 +11,10 @@
 -define(log_level, 1).
 -define(log_debug, 1).
 
--include("logger.hrl").
+-include("erlang_record_json.hrl").
 
 %% various functions for converting from record to json, from json to record
--export([to_record/3, to_json/3, to_record/4, json_to_record/3, record_to_json/3, to_sanitised_json/3]).
+-export([to_record/3, to_json/3, to_record/4, to_sanitised_json/3]).
 
 %% converts json to record using the record definitions and field to be matched
 to_record(Binary, RecordDefs, SameFieldName, RecordFieldsCallback) ->
